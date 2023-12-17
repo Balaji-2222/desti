@@ -69,12 +69,14 @@ const destinationsList = [
   },
 ]
 
-const App = () => {
-  ;<ul>
+const App = () => (
+  <ul className="container">
+    <h1 className="heading">Destination Search</h1>
+    <input type="search" />
     {destinationsList.map(eachItem => (
       <DestinationItem eachItemList={eachItem} key={eachItem.id} />
     ))}
   </ul>
-}
+)
 
 export default App

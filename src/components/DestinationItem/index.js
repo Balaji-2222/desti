@@ -1,15 +1,13 @@
 import './index.css'
 
-import App from './App.js'
-
-const eachItemList = props => {
-  const {eachItem} = props
-  const {name, imgUrl} = eachItem
+const DestinationItem = props => {
+  const {eachItemList} = props
+  const {name, imgUrl} = eachItemList
   return (
     <li>
-      <img src={imgUrl} className="image" />
+      <img src={imgUrl} alt={name} className="image" />
       <h1 className="head">{name}</h1>
     </li>
   )
 }
-export default eachItemList
+export default DestinationItem

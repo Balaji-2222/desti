@@ -6,7 +6,6 @@ class DestinationSearch extends Component {
   render() {
     return (
       <div className="bgContainer">
-        <h1 className="heading">Destination Search</h1>
         <DestinationItem />
       </div>
     )
